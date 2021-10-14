@@ -1,0 +1,122 @@
+.bg-warning {
+  background-color: pink !important;
+}
+.text-warning {
+  color: chocolate !important;
+}
+.font {
+  font-family: "Dancing Script", cursive;
+  text-shadow: 1px 1px rgb(245, 184, 140);
+  user-select: none;
+}
+
+.img-fluid {
+  width: 100% !important;
+  height: 100% !important;
+}
+.bottom {
+  border-bottom: 5px solid chocolate !important;
+}
+.red {
+  color: rgb(210, 30, 30);
+  text-shadow: 1px 1px rgb(253, 201, 150);
+}
+.bg {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.b-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(../img/bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.nav-links,
+.nav-links a {
+  padding: 0 !important;
+  font-size: 0.9em;
+}
+.nav-links {
+  width: 9rem;
+  position: relative;
+  overflow: hidden;
+}
+.nav-links::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(241, 101, 124);
+  left: -20%;
+  transform: rotate(-40deg) translateX(-4rem);
+  transform-origin: left bottom;
+  opacity: 0.8;
+  object-fit: center;
+  transition: left 0.3s;
+}
+.nav-links:hover::before {
+  left: 110%;
+}
+.gallery {
+  white-space: nowrap;
+  min-height: 35vh;
+}
+.gallery div {
+  height: 10em;
+  width: 15em;
+  object-fit: cover;
+}
+.sec-2 {
+  background: linear-gradient(
+      153deg,
+      chocolate 20%,
+      white 25%,
+      brown 30%,
+      chocolate 30%,
+      chocolate 50%,
+      white 55%,
+      brown 60%,
+      chocolate 60%,
+      chocolate 80%,
+      white 85%,
+      brown 90%,
+      chocolate 90%
+    ),
+    url(../img/muffins-742546.png);
+}
+.sec-2-head {
+  min-height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(../img/bg3.jpg) center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .nav-links {
+    width: 8rem;
+  }
+}
+@media (max-width: 991px) {
+  .nav-links {
+    width: 25%;
+  }
+  .nav-links:focus::before {
+    left: 110%;
+  }
+}
+@media (max-width: 500px) {
+  .nav-links {
+    width: 40%;
+  }
+}
+.sample::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(245, 197, 109);
+  top: 30%;
+  left: -25%;
+  transform: rotate(-40deg) translateX(-4rem);
+  transform-origin: left bottom;
+  opacity: 0.3;
+  transition: left 0.3s;
+  z-index: -100;
+}
